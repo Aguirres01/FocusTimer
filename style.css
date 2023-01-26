@@ -1,0 +1,56 @@
+*{
+    margin: 0; /*resetando todos os parâmetros*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #121214; /*configurando cores em variáveis*/
+    --primary-color: #42D3FF;
+    --text-color: #FFFFFF;
+
+    font-size: 62.5%; /* 1 rem se transforma em 1px*/
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    font-family: 'Roboto', sans-serif;
+    
+    display: grid;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    
+}
+
+.hide{
+    display: none; /*todos os elementos que tiver hide na descrição da class irão sumir*/
+}
+
+button svg {
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+#timer {
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+
+    display: flex;
+}
+
+#controls{
+    background-color:rgba(66, 211, 255, 0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+
+
+    border-radius: 9999px;
+    width: clamp(10rem, 10rem + 30vw, 22.8rem); /*mínimo 10rem, ideal 10rem+32, máximo 22.8rem */
+    height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
